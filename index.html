@@ -176,11 +176,16 @@ src="https://www.facebook.com/tr?id=1615837086198930&ev=PageView&noscript=1"
 
 <!-- TIMER SCRIPT -->
 <script>
-setTimeout(function() {
-    let btn = document.getElementById("tgBtn");
-    btn.style.pointerEvents = "auto";
-    btn.style.opacity = "1";
-}, 1000);
+window.onload = function () {
+    setTimeout(function () {
+        const btn = document.getElementById("tgBtn");
+
+        if (btn) {
+            btn.style.pointerEvents = "auto";
+            btn.style.opacity = "1";
+        }
+    }, 1000);
+};
 </script>
 
 </body>
